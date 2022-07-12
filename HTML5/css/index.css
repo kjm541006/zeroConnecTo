@@ -31,26 +31,34 @@ body {
 /* 헤더 */
 .header {
   background: yellow;
-  height: 10vh;
 }
 /* 비쥬얼 */
 .visual {
   background: pink;
-  height: 10vh;
 }
 /* 메인 */
 .main {
-  height: 40vh;
+  display: flow-root;
   background: blue;
-  padding: 30px;
-  display: flex;
+  padding: 30px 15px;
+  /* overflow: hidden; */
+  /* padding: 30px; */
+  /* display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
+
+/* .main::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
 /* 그룹 */
 .group {
+  float: left;
   background: skyblue;
-  /* height: 10vh; */
+  margin: 0 15px;
 }
 
 .group1 {
@@ -66,7 +74,6 @@ body {
 /* 슬로건 */
 .slogan {
   background: lime;
-  height: 10vh;
 }
 /* 푸터 */
 .footer {
@@ -74,5 +81,4 @@ body {
 }
 .footer-inner {
   background: coral;
-  height: 10vh;
 }
