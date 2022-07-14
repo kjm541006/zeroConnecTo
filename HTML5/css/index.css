@@ -373,6 +373,16 @@ body {
   background-size: 14px 14px, 100%;
 }
 
+.term {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.term-img {
+  float: left;
+}
+
 /* 슬로건 */
 .slogan {
   background: lime;
