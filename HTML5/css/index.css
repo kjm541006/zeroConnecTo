@@ -5,7 +5,8 @@
 @import url("./fontello.css");
 
 /* 숨김 콘텐츠 */
-.sr-only {
+.sr-only,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -211,10 +212,8 @@ body {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  animation-name: fadeEffect;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate; /* 애니메이션 방향 교차 */
+  animation: fadeEffect 2000ms infinite alternate;
+  /* alternate --> 애니메이션 방향 교차 */
 }
 
 .visual::before {
