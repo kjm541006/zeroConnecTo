@@ -346,6 +346,23 @@ body {
   color: #ed552f;
 }
 
+.validation {
+  margin: 20px 0;
+}
+
+.validation-list li {
+  margin-bottom: 10px;
+}
+
+.validation-list a {
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.2) url("./images/validation_icon.png") no-repeat 15px 50%;
+  text-indent: 25px;
+  display: block;
+}
+
 /* 슬로건 */
 .slogan {
   background: lime;
