@@ -376,42 +376,67 @@ body {
 /* 웹 관련 용어 */
 
 .term {
-  background: gray;
   margin-top: 20px;
-  padding: 15px;
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #666, #888);
   border: 1px solid #000;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .term-title {
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .term-list {
+  margin-top: 15px;
+}
+
+.term-list div {
   display: flow-root;
+  margin-bottom: 15px;
 }
 
 .term-list-subject {
-  background: red;
-  color: blue;
+  color: #296897;
   font-weight: 700;
-  float: right;
-  width: 150px;
-  margin-bottom: 10px;
+  width: 145px;
 }
 
 .term-list-thumbnail {
-  float: left;
   width: 61px;
   height: 61px;
 }
 
+.term-list-thumbnail img {
+  vertical-align: top;
+}
+
 .term-list-brief {
-  background: pink;
+  width: 145px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.odd .term-list-subject,
+.odd .term-list-brief {
   float: right;
-  width: 150px;
+}
+
+.odd .term-list-thumbnail {
+  float: left;
+}
+
+.even .term-list-subject {
+  float: left;
+}
+
+.even .term-list-thumbnail {
+  float: right;
+}
+
+.even .term-list-brief {
+  float: left;
 }
 
 /* 슬로건 */
