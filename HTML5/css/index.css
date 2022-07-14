@@ -189,13 +189,11 @@ body {
 }
 
 .visual {
-  background: pink;
   height: 120px;
   position: relative;
 }
 
 .visual-text {
-  background: lime;
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
@@ -230,8 +228,10 @@ body {
 /* 메인 */
 .main {
   display: flow-root;
-  background: blue;
+  background: #fff;
   padding: 30px 15px;
+  border-radius: 15px 15px 0 0;
+  min-height: 400px;
   /* overflow: hidden; */
   /* padding: 30px; */
   /* display: flex;
@@ -248,7 +248,6 @@ body {
 /* 그룹 */
 .group {
   float: left;
-  background: skyblue;
   margin: 0 15px;
 }
 
@@ -260,6 +259,51 @@ body {
 }
 .group3 {
   width: 190px;
+}
+
+/* 로그인 */
+.login {
+  background: orangered;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px 5px;
+}
+
+.login-title {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.login-form,
+.sign {
+  background: #fff;
+}
+
+.login-form {
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sign {
+  border-radius: 0 0 5px 5px;
+}
+
+.login-button {
+  width: 50px;
+  height: 50px;
+  background: orangered;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
 }
 
 /* 슬로건 */
