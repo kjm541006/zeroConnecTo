@@ -479,6 +479,47 @@ body {
   border-radius: 4px;
 }
 
+/* 공지사항 및 자료실 */
+.board-panel {
+  display: none;
+}
+
+.is-select > .board-panel {
+  display: block;
+}
+.board {
+  margin-top: 20px;
+  background: yellow;
+  position: relative;
+}
+
+.board-tab {
+  padding: 2px 5px;
+  margin-bottom: 20px;
+}
+
+.archive-tab {
+  position: absolute;
+  top: 0;
+  left: 65px;
+}
+
+.board-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+li > a {
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+li > time {
+  position: absolute;
+  right: 0;
+}
+
 /* 슬로건 */
 .slogan {
   background: lime;
