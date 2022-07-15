@@ -439,6 +439,30 @@ body {
   float: left;
 }
 
+/* 검색 폼 */
+.search-form {
+  background: yellow;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #000;
+  border-bottom: none;
+  padding: 10px;
+}
+
+.search-form-search {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-form-searching::before {
+  content: "\e802";
+}
+
+.search-button {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
 /* 슬로건 */
 .slogan {
   background: lime;
