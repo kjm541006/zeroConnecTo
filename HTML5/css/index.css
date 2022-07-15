@@ -484,11 +484,13 @@ body {
   margin-top: 20px;
   background: yellow;
   position: relative;
-  height: 214px;
+  padding-top: 45px;
+  min-height: 214px;
 }
 
 .board-tab {
-  float: left;
+  position: absolute;
+  top: 0;
   border: 1px solid #aaa;
   border-radius: 5px 5px 0 0;
   background: #ccc;
@@ -496,7 +498,16 @@ body {
   color: #666;
 }
 
+.notice-tab {
+  left: 0;
+}
+
+.archive-tab {
+  left: 80px;
+}
+
 .board-section.is-select .board-tab {
+  z-index: 10;
   background: #fff;
   color: #ed552f;
   border-color: currentColor currentColor #fff currentColor;
@@ -504,11 +515,6 @@ body {
 
 .board-panel {
   display: none;
-  position: absolute;
-  /* background: pink; */
-  top: 45px;
-  left: 0;
-  width: 100%;
 }
 
 .board-section.is-select .board-panel {
