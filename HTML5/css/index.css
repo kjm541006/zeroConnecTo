@@ -691,7 +691,8 @@ body {
   border-bottom: 1px solid #aaa;
 }
 
-.event-title {
+.event-title,
+.related-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -766,41 +767,30 @@ body {
   box-shadow: 5px 5px 0 0 #bbb;
 }
 
-@keyframes relatedEvent {
-  0% {
-    padding-top: 0;
-    height: 150px;
-  }
-  100% {
-    padding-top: 10px;
-    height: 180px;
-  }
-}
-
 .related {
-  margin: 10px 0 0 0;
-}
-
-.related-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  padding-top: 10px;
 }
 
 .related-list {
   margin-top: 10px;
+  background: #fff;
   border: 1px solid #aaa;
-  height: 20px;
-  overflow: hidden;
   border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms, padding-top 400ms, padding-bottom 400ms; /* 모두 따로 지정하면 새로고침시 오류 없음 */
 }
 
-.related-list:hover {
-  height: 150px;
-  animation: relatedEvent 1s alternate forwards;
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px 0;
 }
 
-.related-list {
-  animation-direction: reverse;
+.related-list a {
+  display: block;
+  line-height: 25px;
+  padding: 0 0 0 20px;
 }
 
 /* 슬로건 */
