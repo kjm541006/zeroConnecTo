@@ -692,7 +692,8 @@ body {
 }
 
 .event-title,
-.related-title {
+.related-title,
+.favorite-title {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -791,6 +792,98 @@ body {
   display: block;
   line-height: 25px;
   padding: 0 0 0 20px;
+}
+
+/* 인기사이트 */
+.favorite {
+  position: relative;
+}
+
+.favorite-more {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
+}
+
+.favorite-list {
+  margin-top: 10px;
+  background: yellow;
+  list-style-type: none;
+  /* overflow: hidden; */
+}
+
+.favorite-list li {
+  background: pink;
+  margin-top: 8px;
+}
+
+.no1,
+.no2,
+.no3,
+.no4 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.no1::before {
+  content: "1";
+  width: 17px;
+  height: auto;
+  display: inline-block;
+  background: #aaa;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.no2::before {
+  content: "2";
+  width: 17px;
+  height: auto;
+  display: inline-block;
+  background: #aaa;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.no3::before {
+  content: "3";
+  width: 17px;
+  height: auto;
+  display: inline-block;
+  background: #aaa;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.no4::before {
+  content: "4";
+  width: 17px;
+  height: auto;
+  display: inline-block;
+  background: #aaa;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.up,
+.down,
+.stop {
+  display: inline-block;
+  width: 9px;
+  height: 11px;
+  background: url(./images/rank.png) no-repeat;
+  margin-left: auto;
+  text-align: right;
 }
 
 /* 슬로건 */
