@@ -42,6 +42,23 @@ body {
   font-size: 1.4rem;
 }
 
+/* 스킵 내비게이션 */
+.skip-nav {
+}
+
+.skip-nav a {
+  padding: 4px 0;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+}
+
+.skip-nav a:focus {
+  display: flex;
+}
+
 /* 레이아웃 */
 .header,
 .visual,
@@ -797,6 +814,7 @@ body {
 /* 인기사이트 */
 .favorite {
   position: relative;
+  margin-top: 20px;
 }
 
 .favorite-more {
@@ -808,82 +826,51 @@ body {
 
 .favorite-list {
   margin-top: 10px;
-  background: yellow;
   list-style-type: none;
   /* overflow: hidden; */
 }
 
 .favorite-list li {
-  background: pink;
+  position: relative;
   margin-top: 8px;
+  counter-increment: number;
 }
 
-.no1,
-.no2,
-.no3,
-.no4 {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-
-.no1::before {
-  content: "1";
-  width: 17px;
-  height: auto;
-  display: inline-block;
-  background: #aaa;
-  text-align: center;
-  border-radius: 2px;
+.favorite-list li::before {
+  content: counter(number);
+  display: inline-flex;
+  padding: 2px 5px 0;
+  font-size: 1.2rem;
   color: #fff;
-  margin-right: 5px;
-}
-
-.no2::before {
-  content: "2";
-  width: 17px;
-  height: auto;
-  display: inline-block;
   background: #aaa;
-  text-align: center;
-  border-radius: 2px;
-  color: #fff;
-  margin-right: 5px;
+  border-radius: 4px;
+  min-width: 1.5em;
+  justify-content: center;
+  margin-right: 0.5em;
 }
 
-.no3::before {
-  content: "3";
-  width: 17px;
-  height: auto;
-  display: inline-block;
-  background: #aaa;
-  text-align: center;
-  border-radius: 2px;
-  color: #fff;
-  margin-right: 5px;
+.favorite-list a {
+  display: inline-flex;
+  /* vertical-align: middle; */
 }
 
-.no4::before {
-  content: "4";
-  width: 17px;
-  height: auto;
-  display: inline-block;
-  background: #aaa;
-  text-align: center;
-  border-radius: 2px;
-  color: #fff;
-  margin-right: 5px;
-}
-
-.up,
-.down,
-.stop {
-  display: inline-block;
+.favorite-list em {
+  position: absolute;
   width: 9px;
   height: 11px;
-  background: url(./images/rank.png) no-repeat;
-  margin-left: auto;
-  text-align: right;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+}
+
+.favorite-list .stop {
+  background-position: 0 50%;
+}
+
+.favorite-list .down {
+  background-position: 0 100%;
 }
 
 /* 슬로건 */
