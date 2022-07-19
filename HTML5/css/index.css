@@ -672,64 +672,98 @@ body {
   padding: 8px;
 }
 
-.event {
-  border: 1px solid black;
-  border-bottom: none;
-  background: yellow;
-  border-radius: 5px 5px 0 0;
-  position: relative;
+/* 신규이벤트 및 관련 사이트 */
+.gradient-effect {
+  border-end-end-radius: 1px solid #aaa;
+  border-radius: 5px;
   padding: 10px;
-}
-
-.event-title {
-  font-size: 18px;
-  font-weight: 700;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
 }
 
 .accent-color {
-  color: orangered;
+  color: #d16527;
 }
 
-.event-button-wrapper {
-  /* width: 20px;
+.event {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid #aaa;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .event-button-wrapper {
+  margin-left: auto;
   height: 18px;
-  background-image: url("./images/back_forward.png"); */
-  /* padding-top: 18px;*/
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   overflow: hidden;
+  display: flex;
+  gap: 6px;
+} */
+
+.event-button-container {
+  padding: 4px;
+  /* background: yellow; */
+  margin-left: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 6px;
+  transform: translate(4px, -4px);
 }
 
-.event-button-prev {
-  width: 20px;
+.event-button-container button {
+  width: 19px;
   height: 18px;
-  background-image: url("./images/back_forward.png");
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+}
+
+/* .event-button-prev,
+.event-button-next {
+  width: 19px;
+  height: 0 !important;
+  border: 0;
+  padding: 18px 0 0 0;
+  background: transparent url(./images/back_forward.png) no-repeat 0 0;
+} */
+
+.event button {
+  width: 19px;
+  height: 0 !important;
+  border: 0;
+  padding: 18px 0 0 0;
+  background-color: transparent;
+  background-image: url(./images/back_forward.png);
+  background-repeat: no-repeat;
+}
+
+.event button:focus {
+  outline-offset: -1px;
 }
 
 .event-button-next {
-  width: 20px;
-  height: 18px;
-  background-image: url("./images/back_forward.png");
+  background-position: -36px 0;
 }
 
-.event-thumbnail {
-  box-shadow: 10px 5px 5px gray;
-  margin: 10px;
+.event-detail {
+  /* background: skyblue; */
+  width: 100%;
 }
 
-.related {
-  background: pink;
-  border: 1px solid black;
-  border-radius: 0 0 5px 5px;
-  padding: 10px;
-  border-top: none;
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
 }
 
-.related-title {
-  font-size: 18px;
-  font-weight: 700;
+.event-thumbnail img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #bbb;
 }
 
 /* 슬로건 */
