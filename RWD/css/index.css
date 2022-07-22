@@ -227,25 +227,33 @@ input[type="search"] {
 .board {
   position: relative;
 }
-.board__more {
-  position: absolute;
-  top: var(--spacing-base);
-  right: 0;
-  transform: translateY(-50%);
-}
 
 .board__item {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin: var(--spacing-base) 0;
+  margin: var(--spacing-xs) 0;
 }
 
 .board__link {
-  width: 70%;
+  /* flex-grow: 1; */
+  width: calc(100% - 6rem);
+  white-space: nowrap; /* 개행금지 */
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+}
+
+.board__date {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--spacing-xs);
+  transform: translateX(var(--spacing-xs));
 }
 
 /* 공통 인기사이트 */
